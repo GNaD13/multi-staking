@@ -19,5 +19,5 @@ message GenesisState {
       [ (gogoproto.nullable) = false ];
   repeated ValidatorMultiStakingCoin validator_multi_staking_coin = 2
       [ (gogoproto.nullable) = false ];
-  cosmos.staking.v1beta1.GenesisState staking_genesis_state = 3;
+  cosmos.staking.v1beta1.GenesisState staking_genesis_state = 3[ (gogoproto.nullable) = false ];
 }
